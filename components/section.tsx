@@ -1,7 +1,9 @@
+import Intro from '@/components/intro'
 export default function Section() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-        <h1>Hello Student Name!</h1>
+    <div style={{backgroundColor:'#f6ff4c'}}>
+        <h1>Section</h1>
+        <Intro/>
     </div>
   );
 }
