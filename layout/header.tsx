@@ -1,9 +1,12 @@
 'use client';
-import React from 'react'
+import React from 'react';
+import Image from 'next/image'
+import Heart from '../assets/whiteheart.png';
 
 const Header:React.FC = () => {
     return(
-        <header style={{padding: '1rem',backgroundColor:'#27ff27'}}>
+        <header className="flex" style={{padding: '1rem',backgroundColor:'#27ff27'}}>
+            <Image src={Heart} alt="icon"/>
             <h1>My Application Header</h1>
         </header>
     );
