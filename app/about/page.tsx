@@ -11,6 +11,7 @@ const About: React.FC = asyc => {
     <div className="">
       <main className="flex">
         <div style={{backgroundColor:'#37ff66'}}>
+            <h1>ABOUT</h1>
             <p>This is the about page. Something Something Something</p>
         </div>
         
