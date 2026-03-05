@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image'
 import Heart from '../assets/whiteheart.png';
+import Link from 'next/link'
 
 const Header:React.FC = () => {
     return(
@@ -10,10 +11,11 @@ const Header:React.FC = () => {
                 <Image src={Heart} alt="icon"/>
                 <h1>My Application Header</h1>
             </div>
-            <div className="flex p-8" style={{backgroundColor:'#ff3891'}}>
-                <h2>Navigation Option 1</h2>
-                <h2>Navigation Option 2</h2>
-                <h2>Navigation Option 3</h2>
+            <div className="flex p-8" style={{padding: '1em',backgroundColor:'#ff3891'}}>
+                <Link href="/">HOME</Link>
+                <Link href="/about">ABOUT</Link>
+                <li>NAV OPTION 2</li>
+                <li>NAV OPTION 3</li>
             </div>
             
         </header>
