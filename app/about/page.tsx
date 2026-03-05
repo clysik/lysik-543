@@ -1,9 +1,10 @@
 'using client'
-import Intro from "@/components/intro"
-import Title from "@/components/title"
 import Section from "@/components/section"
 import AccordionUI from "@/layout/ui/accordion";
+import Image from "next/image"
 import React from "react";
+
+import RedBlob from '../../assets/redblob.png'
 
 
 const About: React.FC = asyc => {
@@ -13,6 +14,7 @@ const About: React.FC = asyc => {
         <div style={{backgroundColor:'#37ff66'}}>
             <h1>ABOUT</h1>
             <p>This is the about page. Something Something Something</p>
+            <Image src={RedBlob} alt="image of a red circle drawn in MS Paint"/>
         </div>
         
       </main>
